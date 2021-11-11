@@ -84,7 +84,7 @@ async def start_me(bot, update):
         try:
             user = await bot.get_chat_member(update_channel, update.chat.id)
             if user.status == "kicked":
-               await update.reply_text(" Sorry,You've Been Flooding Me So My Owner Removed You From Using Me If You Think It's An Error Contact : @Faris_TG")
+               await update.reply_text(" Sorry,You've Been Flooding Me So My Owner Removed You From Using Me If You Think It's An Error Contact : @Tele_unitef_bots")
                return
         except UserNotParticipant:
             await update.reply_text(
@@ -102,12 +102,12 @@ async def start_me(bot, update):
                         InlineKeyboardButton("Help", callback_data = "ghelp")
                 ],
                 [
-                    InlineKeyboardButton('Support Channel', url='https://t.me/Mai_bOTs'),
-                    InlineKeyboardButton('Feedback', url='https://t.me/No_OnE_Kn0wS_Me')
+                    InlineKeyboardButton('Support Channel', url='https://t.me/Tele_united_bots'),
+                    InlineKeyboardButton('Feedback', url='https://t.me/Tele_united_bots')
                 ],
                 [
-                    InlineKeyboardButton('Other Bots', url='https://t.me/Mai_bOTs/17'),
-                    InlineKeyboardButton('Source', url='https://github.com/No-OnE-Kn0wS-Me/FileRenameBot')
+                    InlineKeyboardButton('Other Bots', url='https://t.me/Tele_united_bots'),
+                    InlineKeyboardButton('Source', url='https://github.com')
                 ]
             ]
         ),
@@ -115,8 +115,8 @@ async def start_me(bot, update):
     )
             return 
 
-@Mai_bOTs.on_callback_query()
-async def cb_handler(client: Mai_bOTs , query: CallbackQuery):
+@Tele_united_bots.on_callback_query()
+async def cb_handler(client: Tele_united_bots, query: CallbackQuery):
     data = query.data
     if data == "rnme":
         await query.message.edit_text(
